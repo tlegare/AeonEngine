@@ -32,7 +32,7 @@ aeon_TileHandle testTile;
 float camX = 50.0f;
 float camY = 32.5f;
 float camZ = 100.0;
-float camT = 10.0f;
+float camT = 100.0f;
 
 void gameInit(void)
 {
@@ -125,8 +125,8 @@ void gameInit(void)
 
 bool gameUpdate(float dt)
 {
-    aeon_DrawText(5, 5, 0.0, testFont, "This is drawn in camera space!");
-    aeon_DrawText(5, 25, 1.0, testFont, "This is drawn in static space!");
+    aeon_DrawText(5, 5, 0.0, testFont, "This is drawn in the world!");
+    aeon_DrawText(5, 25, 1.0, testFont, "This is stuck to the screen!");
     for(int i = 0; i < MAX_TEST_SPRITES; i++)
     {
         aeon_SetSpriteRotation(aeon_DegToRad(testSprites[i].r += (testSprites[i].rs * dt)), testSprites[i].sprite);
