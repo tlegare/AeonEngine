@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED3A3E3A17BC6712009764B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A3E3917BC6712009764B1 /* Cocoa.framework */; };
+		ED3A3E4417BC6712009764B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED3A3E4217BC6712009764B1 /* InfoPlist.strings */; };
+		ED3A3E4A17BC6712009764B1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = ED3A3E4817BC6712009764B1 /* Credits.rtf */; };
+		ED3A3E5717BC6882009764B1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A3E5617BC6882009764B1 /* OpenGL.framework */; };
+		ED3A3E5917BC68B6009764B1 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A3E5817BC68B6009764B1 /* SDL.framework */; };
+		ED3A3E5B17BC68CD009764B1 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A3E5A17BC68CD009764B1 /* SDL_image.framework */; };
+		ED3A3E7717BC6DBC009764B1 /* aeonCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E5C17BC6DBC009764B1 /* aeonCamera.cpp */; };
+		ED3A3E7817BC6DBC009764B1 /* aeonInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6017BC6DBC009764B1 /* aeonInput.cpp */; };
+		ED3A3E7917BC6DBC009764B1 /* aeonInterp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6217BC6DBC009764B1 /* aeonInterp.cpp */; };
+		ED3A3E7A17BC6DBC009764B1 /* aeonKernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6417BC6DBC009764B1 /* aeonKernel.cpp */; };
+		ED3A3E7B17BC6DBC009764B1 /* aeonMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6617BC6DBC009764B1 /* aeonMath.cpp */; };
+		ED3A3E7C17BC6DBC009764B1 /* aeonSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6917BC6DBC009764B1 /* aeonSprite.cpp */; };
+		ED3A3E7D17BC6DBC009764B1 /* aeonText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6B17BC6DBC009764B1 /* aeonText.cpp */; };
+		ED3A3E7E17BC6DBC009764B1 /* aeonTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6D17BC6DBC009764B1 /* aeonTile.cpp */; };
+		ED3A3E7F17BC6DBC009764B1 /* aeonTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6F17BC6DBC009764B1 /* aeonTimer.cpp */; };
+		ED3A3E8017BC6DBC009764B1 /* gameMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7117BC6DBC009764B1 /* gameMain.cpp */; };
+		ED3A3E8117BC6DBC009764B1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7217BC6DBC009764B1 /* main.cpp */; };
+		ED3A3E8217BC6DBC009764B1 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7417BC6DBC009764B1 /* SDLMain.m */; };
+		ED3A3E8317BC6DBC009764B1 /* vertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7517BC6DBC009764B1 /* vertexShader.cpp */; };
+		ED8FDEAD17BC7A76005AE79D /* chars.png in Resources */ = {isa = PBXBuildFile; fileRef = ED8FDEAC17BC7A76005AE79D /* chars.png */; };
+		ED8FDEB117BC7CA4005AE79D /* fragment.shader in Sources */ = {isa = PBXBuildFile; fileRef = ED8FDEAF17BC7CA4005AE79D /* fragment.shader */; };
+		ED8FDEB217BC7CA4005AE79D /* vertex.shader in Sources */ = {isa = PBXBuildFile; fileRef = ED8FDEB017BC7CA4005AE79D /* vertex.shader */; };
+		ED8FDEB317BCFC1C005AE79D /* fragment.shader in Resources */ = {isa = PBXBuildFile; fileRef = ED8FDEAF17BC7CA4005AE79D /* fragment.shader */; };
+		ED8FDEB417BCFC21005AE79D /* vertex.shader in Resources */ = {isa = PBXBuildFile; fileRef = ED8FDEB017BC7CA4005AE79D /* vertex.shader */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED3A3E3617BC6712009764B1 /* AeonEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeonEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3A3E3917BC6712009764B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		ED3A3E3C17BC6712009764B1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		ED3A3E3D17BC6712009764B1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ED3A3E3E17BC6712009764B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ED3A3E4117BC6712009764B1 /* AeonEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AeonEngine-Info.plist"; sourceTree = "<group>"; };
+		ED3A3E4317BC6712009764B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED3A3E4717BC6712009764B1 /* AeonEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AeonEngine-Prefix.pch"; sourceTree = "<group>"; };
+		ED3A3E4917BC6712009764B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		ED3A3E5617BC6882009764B1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		ED3A3E5817BC68B6009764B1 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
+		ED3A3E5A17BC68CD009764B1 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../Library/Frameworks/SDL_image.framework; sourceTree = "<group>"; };
+		ED3A3E5C17BC6DBC009764B1 /* aeonCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonCamera.cpp; sourceTree = "<group>"; };
+		ED3A3E5D17BC6DBC009764B1 /* aeonCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonCamera.h; sourceTree = "<group>"; };
+		ED3A3E5E17BC6DBC009764B1 /* aeonEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonEngine.h; sourceTree = "<group>"; };
+		ED3A3E5F17BC6DBC009764B1 /* aeonEngineInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonEngineInternal.h; sourceTree = "<group>"; };
+		ED3A3E6017BC6DBC009764B1 /* aeonInput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonInput.cpp; sourceTree = "<group>"; };
+		ED3A3E6117BC6DBC009764B1 /* aeonInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonInput.h; sourceTree = "<group>"; };
+		ED3A3E6217BC6DBC009764B1 /* aeonInterp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonInterp.cpp; sourceTree = "<group>"; };
+		ED3A3E6317BC6DBC009764B1 /* aeonInterp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonInterp.h; sourceTree = "<group>"; };
+		ED3A3E6417BC6DBC009764B1 /* aeonKernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonKernel.cpp; sourceTree = "<group>"; wrapsLines = 0; };
+		ED3A3E6517BC6DBC009764B1 /* aeonKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonKernel.h; sourceTree = "<group>"; };
+		ED3A3E6617BC6DBC009764B1 /* aeonMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonMath.cpp; sourceTree = "<group>"; };
+		ED3A3E6717BC6DBC009764B1 /* aeonMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonMath.h; sourceTree = "<group>"; };
+		ED3A3E6817BC6DBC009764B1 /* aeonPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonPool.h; sourceTree = "<group>"; };
+		ED3A3E6917BC6DBC009764B1 /* aeonSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonSprite.cpp; sourceTree = "<group>"; };
+		ED3A3E6A17BC6DBC009764B1 /* aeonSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonSprite.h; sourceTree = "<group>"; };
+		ED3A3E6B17BC6DBC009764B1 /* aeonText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonText.cpp; sourceTree = "<group>"; };
+		ED3A3E6C17BC6DBC009764B1 /* aeonText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonText.h; sourceTree = "<group>"; };
+		ED3A3E6D17BC6DBC009764B1 /* aeonTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonTile.cpp; sourceTree = "<group>"; };
+		ED3A3E6E17BC6DBC009764B1 /* aeonTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonTile.h; sourceTree = "<group>"; };
+		ED3A3E6F17BC6DBC009764B1 /* aeonTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonTimer.cpp; sourceTree = "<group>"; };
+		ED3A3E7017BC6DBC009764B1 /* aeonTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonTimer.h; sourceTree = "<group>"; };
+		ED3A3E7117BC6DBC009764B1 /* gameMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gameMain.cpp; path = AeonEngine/gameMain.cpp; sourceTree = "<group>"; };
+		ED3A3E7217BC6DBC009764B1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = AeonEngine/main.cpp; sourceTree = "<group>"; };
+		ED3A3E7317BC6DBC009764B1 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = AeonEngine/SDLMain.h; sourceTree = "<group>"; };
+		ED3A3E7417BC6DBC009764B1 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = AeonEngine/SDLMain.m; sourceTree = "<group>"; };
+		ED3A3E7517BC6DBC009764B1 /* vertexShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vertexShader.cpp; path = AeonEngine/vertexShader.cpp; sourceTree = "<group>"; };
+		ED3A3E7617BC6DBC009764B1 /* vertexShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vertexShader.h; path = AeonEngine/vertexShader.h; sourceTree = "<group>"; };
+		ED3A3E8417BC6F0C009764B1 /* framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = framework.h; sourceTree = "<group>"; };
+		ED3A3E8517BC6F0D009764B1 /* gameMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameMain.h; sourceTree = "<group>"; };
+		ED8FDEAC17BC7A76005AE79D /* chars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chars.png; sourceTree = "<group>"; };
+		ED8FDEAF17BC7CA4005AE79D /* fragment.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.shader; sourceTree = "<group>"; };
+		ED8FDEB017BC7CA4005AE79D /* vertex.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.shader; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED3A3E3317BC6712009764B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3A3E5B17BC68CD009764B1 /* SDL_image.framework in Frameworks */,
+				ED3A3E5917BC68B6009764B1 /* SDL.framework in Frameworks */,
+				ED3A3E5717BC6882009764B1 /* OpenGL.framework in Frameworks */,
+				ED3A3E3A17BC6712009764B1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED3A3E2D17BC6712009764B1 = {
+			isa = PBXGroup;
+			children = (
+				ED3A3E5A17BC68CD009764B1 /* SDL_image.framework */,
+				ED3A3E5817BC68B6009764B1 /* SDL.framework */,
+				ED3A3E5617BC6882009764B1 /* OpenGL.framework */,
+				ED3A3E8617BC7677009764B1 /* Project */,
+				ED3A3E3817BC6712009764B1 /* Frameworks */,
+				ED3A3E3717BC6712009764B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED3A3E3717BC6712009764B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A3E3617BC6712009764B1 /* AeonEngine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED3A3E3817BC6712009764B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A3E3917BC6712009764B1 /* Cocoa.framework */,
+				ED3A3E3B17BC6712009764B1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED3A3E3B17BC6712009764B1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A3E3C17BC6712009764B1 /* AppKit.framework */,
+				ED3A3E3D17BC6712009764B1 /* CoreData.framework */,
+				ED3A3E3E17BC6712009764B1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		ED3A3E3F17BC6712009764B1 /* AeonEngine */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A3E5C17BC6DBC009764B1 /* aeonCamera.cpp */,
+				ED3A3E5D17BC6DBC009764B1 /* aeonCamera.h */,
+				ED3A3E5E17BC6DBC009764B1 /* aeonEngine.h */,
+				ED3A3E5F17BC6DBC009764B1 /* aeonEngineInternal.h */,
+				ED3A3E6017BC6DBC009764B1 /* aeonInput.cpp */,
+				ED3A3E6117BC6DBC009764B1 /* aeonInput.h */,
+				ED3A3E6217BC6DBC009764B1 /* aeonInterp.cpp */,
+				ED3A3E6317BC6DBC009764B1 /* aeonInterp.h */,
+				ED3A3E6417BC6DBC009764B1 /* aeonKernel.cpp */,
+				ED3A3E6517BC6DBC009764B1 /* aeonKernel.h */,
+				ED3A3E6617BC6DBC009764B1 /* aeonMath.cpp */,
+				ED3A3E6717BC6DBC009764B1 /* aeonMath.h */,
+				ED3A3E6817BC6DBC009764B1 /* aeonPool.h */,
+				ED3A3E6917BC6DBC009764B1 /* aeonSprite.cpp */,
+				ED3A3E6A17BC6DBC009764B1 /* aeonSprite.h */,
+				ED3A3E6B17BC6DBC009764B1 /* aeonText.cpp */,
+				ED3A3E6C17BC6DBC009764B1 /* aeonText.h */,
+				ED3A3E6D17BC6DBC009764B1 /* aeonTile.cpp */,
+				ED3A3E6E17BC6DBC009764B1 /* aeonTile.h */,
+				ED3A3E6F17BC6DBC009764B1 /* aeonTimer.cpp */,
+				ED3A3E7017BC6DBC009764B1 /* aeonTimer.h */,
+				ED3A3E4017BC6712009764B1 /* Supporting Files */,
+			);
+			path = AeonEngine;
+			sourceTree = "<group>";
+		};
+		ED3A3E4017BC6712009764B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A3E4117BC6712009764B1 /* AeonEngine-Info.plist */,
+				ED3A3E4217BC6712009764B1 /* InfoPlist.strings */,
+				ED3A3E4717BC6712009764B1 /* AeonEngine-Prefix.pch */,
+				ED3A3E4817BC6712009764B1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED3A3E8617BC7677009764B1 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				ED8FDEAE17BC7C23005AE79D /* Assets */,
+				ED3A3E8817BC76F9009764B1 /* AeonMisc */,
+				ED3A3E8717BC76C3009764B1 /* AeonGame */,
+				ED3A3E3F17BC6712009764B1 /* AeonEngine */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		ED3A3E8717BC76C3009764B1 /* AeonGame */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A3E8517BC6F0D009764B1 /* gameMain.h */,
+				ED3A3E7117BC6DBC009764B1 /* gameMain.cpp */,
+			);
+			name = AeonGame;
+			sourceTree = "<group>";
+		};
+		ED3A3E8817BC76F9009764B1 /* AeonMisc */ = {
+			isa = PBXGroup;
+			children = (
+				ED3A3E8417BC6F0C009764B1 /* framework.h */,
+				ED3A3E7217BC6DBC009764B1 /* main.cpp */,
+				ED3A3E7317BC6DBC009764B1 /* SDLMain.h */,
+				ED3A3E7417BC6DBC009764B1 /* SDLMain.m */,
+				ED3A3E7517BC6DBC009764B1 /* vertexShader.cpp */,
+				ED3A3E7617BC6DBC009764B1 /* vertexShader.h */,
+			);
+			name = AeonMisc;
+			sourceTree = "<group>";
+		};
+		ED8FDEAE17BC7C23005AE79D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ED8FDEAF17BC7CA4005AE79D /* fragment.shader */,
+				ED8FDEB017BC7CA4005AE79D /* vertex.shader */,
+				ED8FDEAC17BC7A76005AE79D /* chars.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED3A3E3517BC6712009764B1 /* AeonEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3A3E5317BC6713009764B1 /* Build configuration list for PBXNativeTarget "AeonEngine" */;
+			buildPhases = (
+				ED3A3E3217BC6712009764B1 /* Sources */,
+				ED3A3E3317BC6712009764B1 /* Frameworks */,
+				ED3A3E3417BC6712009764B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AeonEngine;
+			productName = AeonEngine;
+			productReference = ED3A3E3617BC6712009764B1 /* AeonEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED3A3E2E17BC6712009764B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = AeonCorp;
+			};
+			buildConfigurationList = ED3A3E3117BC6712009764B1 /* Build configuration list for PBXProject "AeonEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ED3A3E2D17BC6712009764B1;
+			productRefGroup = ED3A3E3717BC6712009764B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED3A3E3517BC6712009764B1 /* AeonEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED3A3E3417BC6712009764B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8FDEB317BCFC1C005AE79D /* fragment.shader in Resources */,
+				ED3A3E4417BC6712009764B1 /* InfoPlist.strings in Resources */,
+				ED3A3E4A17BC6712009764B1 /* Credits.rtf in Resources */,
+				ED8FDEB417BCFC21005AE79D /* vertex.shader in Resources */,
+				ED8FDEAD17BC7A76005AE79D /* chars.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED3A3E3217BC6712009764B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3A3E7717BC6DBC009764B1 /* aeonCamera.cpp in Sources */,
+				ED3A3E7817BC6DBC009764B1 /* aeonInput.cpp in Sources */,
+				ED3A3E7917BC6DBC009764B1 /* aeonInterp.cpp in Sources */,
+				ED3A3E7A17BC6DBC009764B1 /* aeonKernel.cpp in Sources */,
+				ED3A3E7B17BC6DBC009764B1 /* aeonMath.cpp in Sources */,
+				ED3A3E7C17BC6DBC009764B1 /* aeonSprite.cpp in Sources */,
+				ED3A3E7D17BC6DBC009764B1 /* aeonText.cpp in Sources */,
+				ED3A3E7E17BC6DBC009764B1 /* aeonTile.cpp in Sources */,
+				ED3A3E7F17BC6DBC009764B1 /* aeonTimer.cpp in Sources */,
+				ED3A3E8017BC6DBC009764B1 /* gameMain.cpp in Sources */,
+				ED3A3E8117BC6DBC009764B1 /* main.cpp in Sources */,
+				ED3A3E8217BC6DBC009764B1 /* SDLMain.m in Sources */,
+				ED3A3E8317BC6DBC009764B1 /* vertexShader.cpp in Sources */,
+				ED8FDEB117BC7CA4005AE79D /* fragment.shader in Sources */,
+				ED8FDEB217BC7CA4005AE79D /* vertex.shader in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED3A3E4217BC6712009764B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3A3E4317BC6712009764B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ED3A3E4817BC6712009764B1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3A3E4917BC6712009764B1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED3A3E5117BC6713009764B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ED3A3E5217BC6713009764B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ED3A3E5417BC6713009764B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AeonEngine/AeonEngine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL.framework/Headers,
+					/Library/Frameworks/SDL_image.framework/Headers,
+				);
+				INFOPLIST_FILE = "AeonEngine/AeonEngine-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ED3A3E5517BC6713009764B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks/;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AeonEngine/AeonEngine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL.framework/Headers,
+					/Library/Frameworks/SDL_image.framework/Headers,
+				);
+				INFOPLIST_FILE = "AeonEngine/AeonEngine-Info.plist";
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED3A3E3117BC6712009764B1 /* Build configuration list for PBXProject "AeonEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3A3E5117BC6713009764B1 /* Debug */,
+				ED3A3E5217BC6713009764B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3A3E5317BC6713009764B1 /* Build configuration list for PBXNativeTarget "AeonEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3A3E5417BC6713009764B1 /* Debug */,
+				ED3A3E5517BC6713009764B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED3A3E2E17BC6712009764B1 /* Project object */;
+}
