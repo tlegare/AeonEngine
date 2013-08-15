@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		428D23D917BD56AA00774438 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428D23D817BD56AA00774438 /* SDL_image.framework */; };
+		428D23DB17BD56B800774438 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428D23DA17BD56B800774438 /* SDL.framework */; };
 		ED3A3E3A17BC6712009764B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A3E3917BC6712009764B1 /* Cocoa.framework */; };
 		ED3A3E4417BC6712009764B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED3A3E4217BC6712009764B1 /* InfoPlist.strings */; };
 		ED3A3E4A17BC6712009764B1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = ED3A3E4817BC6712009764B1 /* Credits.rtf */; };
 		ED3A3E5717BC6882009764B1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A3E5617BC6882009764B1 /* OpenGL.framework */; };
-		ED3A3E5917BC68B6009764B1 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A3E5817BC68B6009764B1 /* SDL.framework */; };
-		ED3A3E5B17BC68CD009764B1 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A3E5A17BC68CD009764B1 /* SDL_image.framework */; };
 		ED3A3E7717BC6DBC009764B1 /* aeonCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E5C17BC6DBC009764B1 /* aeonCamera.cpp */; };
 		ED3A3E7817BC6DBC009764B1 /* aeonInput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6017BC6DBC009764B1 /* aeonInput.cpp */; };
 		ED3A3E7917BC6DBC009764B1 /* aeonInterp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E6217BC6DBC009764B1 /* aeonInterp.cpp */; };
@@ -34,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		428D23D817BD56AA00774438 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../../../Library/Frameworks/SDL_image.framework; sourceTree = "<group>"; };
+		428D23DA17BD56B800774438 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
 		ED3A3E3617BC6712009764B1 /* AeonEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeonEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3A3E3917BC6712009764B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ED3A3E3C17BC6712009764B1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -44,8 +46,6 @@
 		ED3A3E4717BC6712009764B1 /* AeonEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AeonEngine-Prefix.pch"; sourceTree = "<group>"; };
 		ED3A3E4917BC6712009764B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		ED3A3E5617BC6882009764B1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		ED3A3E5817BC68B6009764B1 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
-		ED3A3E5A17BC68CD009764B1 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../Library/Frameworks/SDL_image.framework; sourceTree = "<group>"; };
 		ED3A3E5C17BC6DBC009764B1 /* aeonCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonCamera.cpp; sourceTree = "<group>"; };
 		ED3A3E5D17BC6DBC009764B1 /* aeonCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonCamera.h; sourceTree = "<group>"; };
 		ED3A3E5E17BC6DBC009764B1 /* aeonEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonEngine.h; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3A3E5B17BC68CD009764B1 /* SDL_image.framework in Frameworks */,
-				ED3A3E5917BC68B6009764B1 /* SDL.framework in Frameworks */,
+				428D23DB17BD56B800774438 /* SDL.framework in Frameworks */,
+				428D23D917BD56AA00774438 /* SDL_image.framework in Frameworks */,
 				ED3A3E5717BC6882009764B1 /* OpenGL.framework in Frameworks */,
 				ED3A3E3A17BC6712009764B1 /* Cocoa.framework in Frameworks */,
 			);
@@ -98,8 +98,8 @@
 		ED3A3E2D17BC6712009764B1 = {
 			isa = PBXGroup;
 			children = (
-				ED3A3E5A17BC68CD009764B1 /* SDL_image.framework */,
-				ED3A3E5817BC68B6009764B1 /* SDL.framework */,
+				428D23DA17BD56B800774438 /* SDL.framework */,
+				428D23D817BD56AA00774438 /* SDL_image.framework */,
 				ED3A3E5617BC6882009764B1 /* OpenGL.framework */,
 				ED3A3E8617BC7677009764B1 /* Project */,
 				ED3A3E3817BC6712009764B1 /* Frameworks */,
