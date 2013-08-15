@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Isaac Turner. All rights reserved.
 //
 
-#include "aeonEngine.h"
 #include "gameMain.h"
 
 struct Spinner
@@ -37,7 +36,7 @@ float camT = 10.0f;
 
 void gameInit(void)
 {
-    aeon_Init(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BITDEPTH, AEON_MODE_WINDOWED);
+    aeon_Init(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BITDEPTH, SCREEN_MODE);
     aeon_ShowCursor(false);
     
     srand(0xff726364);
