@@ -25,7 +25,7 @@
 		ED3A3E8017BC6DBC009764B1 /* gameMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7117BC6DBC009764B1 /* gameMain.cpp */; };
 		ED3A3E8117BC6DBC009764B1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7217BC6DBC009764B1 /* main.cpp */; };
 		ED3A3E8217BC6DBC009764B1 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7417BC6DBC009764B1 /* SDLMain.m */; };
-		ED3A3E8317BC6DBC009764B1 /* vertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7517BC6DBC009764B1 /* vertexShader.cpp */; };
+		ED3A3E8317BC6DBC009764B1 /* aeonShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED3A3E7517BC6DBC009764B1 /* aeonShader.cpp */; };
 		ED8FDEAD17BC7A76005AE79D /* chars.png in Resources */ = {isa = PBXBuildFile; fileRef = ED8FDEAC17BC7A76005AE79D /* chars.png */; };
 		ED8FDEB117BC7CA4005AE79D /* fragment.shader in Sources */ = {isa = PBXBuildFile; fileRef = ED8FDEAF17BC7CA4005AE79D /* fragment.shader */; };
 		ED8FDEB217BC7CA4005AE79D /* vertex.shader in Sources */ = {isa = PBXBuildFile; fileRef = ED8FDEB017BC7CA4005AE79D /* vertex.shader */; };
@@ -71,8 +71,8 @@
 		ED3A3E7217BC6DBC009764B1 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = AeonEngine/main.cpp; sourceTree = "<group>"; };
 		ED3A3E7317BC6DBC009764B1 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = AeonEngine/SDLMain.h; sourceTree = "<group>"; };
 		ED3A3E7417BC6DBC009764B1 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = AeonEngine/SDLMain.m; sourceTree = "<group>"; };
-		ED3A3E7517BC6DBC009764B1 /* vertexShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vertexShader.cpp; path = AeonEngine/vertexShader.cpp; sourceTree = "<group>"; };
-		ED3A3E7617BC6DBC009764B1 /* vertexShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vertexShader.h; path = AeonEngine/vertexShader.h; sourceTree = "<group>"; };
+		ED3A3E7517BC6DBC009764B1 /* aeonShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = aeonShader.cpp; sourceTree = "<group>"; };
+		ED3A3E7617BC6DBC009764B1 /* aeonShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeonShader.h; sourceTree = "<group>"; };
 		ED3A3E8417BC6F0C009764B1 /* framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = framework.h; sourceTree = "<group>"; };
 		ED3A3E8517BC6F0D009764B1 /* gameMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gameMain.h; sourceTree = "<group>"; };
 		ED8FDEAC17BC7A76005AE79D /* chars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chars.png; sourceTree = "<group>"; };
@@ -137,6 +137,8 @@
 		ED3A3E3F17BC6712009764B1 /* AeonEngine */ = {
 			isa = PBXGroup;
 			children = (
+				ED3A3E7617BC6DBC009764B1 /* aeonShader.h */,
+				ED3A3E7517BC6DBC009764B1 /* aeonShader.cpp */,
 				ED3A3E5C17BC6DBC009764B1 /* aeonCamera.cpp */,
 				ED3A3E5D17BC6DBC009764B1 /* aeonCamera.h */,
 				ED3A3E5E17BC6DBC009764B1 /* aeonEngine.h */,
@@ -201,8 +203,6 @@
 				ED3A3E7217BC6DBC009764B1 /* main.cpp */,
 				ED3A3E7317BC6DBC009764B1 /* SDLMain.h */,
 				ED3A3E7417BC6DBC009764B1 /* SDLMain.m */,
-				ED3A3E7517BC6DBC009764B1 /* vertexShader.cpp */,
-				ED3A3E7617BC6DBC009764B1 /* vertexShader.h */,
 			);
 			name = AeonMisc;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 				ED3A3E8017BC6DBC009764B1 /* gameMain.cpp in Sources */,
 				ED3A3E8117BC6DBC009764B1 /* main.cpp in Sources */,
 				ED3A3E8217BC6DBC009764B1 /* SDLMain.m in Sources */,
-				ED3A3E8317BC6DBC009764B1 /* vertexShader.cpp in Sources */,
+				ED3A3E8317BC6DBC009764B1 /* aeonShader.cpp in Sources */,
 				ED8FDEB117BC7CA4005AE79D /* fragment.shader in Sources */,
 				ED8FDEB217BC7CA4005AE79D /* vertex.shader in Sources */,
 			);
